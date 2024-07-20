@@ -31,23 +31,24 @@ class Solution {
 public:
     long long reverse(long long x) {
 
-        long long num=x;
-        if(x<0)
-            x=0-x;
         long long temp=0;
-        while(x!=0){
-            temp=10*temp+x%10;
-            x=x/10;
+        long long num = x;
+
+        if(x<0)
+            num = -1 * x;
+
+        while(num){
+            temp = 10 * temp + num % 10;
+            num = num / 10;
         }
-        
-        if(temp>INT_MAX || temp<INT_MIN)
+
+        if(temp > INT_MAX || temp < INT_MIN)
             return 0;
-        
-        if(num>0)
-            return temp;
-        else
-            return 0-temp;
-        
+
+        if(x < 0)
+            return -1 * temp;
+
+        return temp;
         
     }
 };
