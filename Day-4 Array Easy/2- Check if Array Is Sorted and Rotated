@@ -1,0 +1,27 @@
+//   https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/
+
+
+// Watch luv babbar video. He told about one pattern in his video. 
+//    https://www.youtube.com/watch?v=Z7_nMTHROZo
+
+
+class Solution {
+public:
+    bool check(vector<int>& num) {
+        int n = num.size();
+
+        int numOfPairs = 0;
+
+        for(int i=1; i<n; i++){
+
+            if(num[i-1]>num[i])
+                numOfPairs++;
+
+        }
+
+        if(num[n-1]>num[0])
+            numOfPairs++;
+
+        return numOfPairs<=1;
+    }
+};
