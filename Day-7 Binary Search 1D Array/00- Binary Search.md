@@ -2,7 +2,16 @@
 
 - In some ques (first and last occurence), we need to run bs for two sorted parts (bsf ---> from 0 to index and bsl ---> from index to n-1)
 
-- Mostly in rotated array questions, we need to look up about sorted part of array and according to it, we need to move further. In some rotated questions, we need to carry some potential answer with us ( Min element in rotated sorted array)
+##
+## 7 and 8. Element in a Rotated Sorted Array
+
+- It is sorted hence we can think about BS
+- We need to look up sorted part of array and according to it, need to move further
+- If we calculate mid, and if nums[mid] >= nums[low] so it means this part is sorted
+- Then we will see if target lie here or not. If yes, then we will do high = mid - 1 else low = mid + 1
+- And if nums[mid] <= nums[high] so it means this part is sorted
+- Then we will see if target lie here or not. If yes, then we will do low = mid + 1 else high = mid - 1
+
 
 ##
 ## 9 and 10. Minimum Element in a Rotated Sorted Array
