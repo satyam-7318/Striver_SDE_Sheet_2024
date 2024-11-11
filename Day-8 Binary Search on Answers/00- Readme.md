@@ -12,7 +12,7 @@
 ##
 ## 2. nth root of m
 
-- We have to find nth root of n.
+- We have to find nth root of m.
 - So range would be 1 to m. We have to find mid and if mid * mid *.....*mid (n times) == m ... return mid
 - While finding mid * mid *.....*mid (n times), we need to take care of overflow otherwise there could be error in answer
 - Ifmid * mid *.....*mid (n times) < m => low = mid + 1;
