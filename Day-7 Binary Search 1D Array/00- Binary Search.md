@@ -1,6 +1,18 @@
+
+##
+## 1, 2 and 3. Basic Binary Search
+
 - Aim of Binary search is to always eliminate either the left or right because of sorted nature of array.
 
-- In some ques (first and last occurence), we need to run bs for two sorted parts (bsf ---> from 0 to index and bsl ---> from index to n-1)
+##
+## 5 and 6. First and last occurence of element
+
+- First, we need to find any index of that element using BS
+- When we get that index, we can break BS for two parts, BSF and BSL (BS first and BS last)
+- For BSF (0 to that index)
+- For BSL (that index to n-1)
+- For total occurence, BSL - BSF + 1
+
 
 ##
 ## 7 and 8. Element in a Rotated Sorted Array
@@ -11,6 +23,18 @@
 - Then we will see if target lie here or not. If yes, then we will do high = mid - 1 else low = mid + 1
 - And if nums[mid] <= nums[high] so it means this part is sorted
 - Then we will see if target lie here or not. If yes, then we will do low = mid + 1 else high = mid - 1
+- if there are duplicates, use while loop to eliminate those duplicates like
+
+            // low end
+            while(low < high && nums[low] == nums[low+1]){
+                low++;
+            }
+
+            //high end
+            while(low < high && nums[high] == nums[high-1]){
+                high--;
+            }
+                                                                        
 
 
 ##
