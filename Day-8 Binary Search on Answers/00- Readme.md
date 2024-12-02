@@ -17,3 +17,11 @@
 - While finding mid * mid *.....*mid (n times), we need to take care of overflow otherwise there could be error in answer
 - Ifmid * mid *.....*mid (n times) < m => low = mid + 1;
 - If mid * mid *.....*mid (n times) > m => then high = mid - 1;
+
+
+##
+## 3. Koko eating bananas
+
+- We have to find number of bananas.
+- So range would be 1 to max element. We have to find mid and if mid satisfies condition, it would be our potential answer.
+- high would be mid - 1 else low would be mid + 1
