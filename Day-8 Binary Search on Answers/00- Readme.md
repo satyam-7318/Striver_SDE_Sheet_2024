@@ -25,3 +25,12 @@
 - We have to find number of bananas.
 - So range would be 1 to max element. We have to find mid and if mid satisfies condition, it would be our potential answer.
 - high would be mid - 1 else low would be mid + 1
+
+
+##
+## 4. Minimum number of days to make bouquets
+
+- First find max number. At this day, all flowers will have blossomed.
+- So range would be 1 to max element. We have to find mid and if mid satisfies condition, it would be our potential answer.
+- high would be mid - 1 else low would be mid + 1
+
