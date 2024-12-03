@@ -53,3 +53,13 @@
 - So range would be 1 to sum. We have to find mid and if mid satisfies condition, it would be our potential answer.
 - high would be mid - 1 else low would be mid + 1
 
+
+
+
+
+##
+## 7. Kth missing positive number
+- low would be 0 and high would be last index
+- Find mid and with help of mid, find missing number
+- If missing < k then low = mid + 1 else high = mid - 1
+- return arr[high] + more i.e. high + k + 1
