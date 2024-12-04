@@ -81,6 +81,7 @@
 
 ##
 ## 8. Aggressive Cows
+- sort the array first
 - Range would be 1 to max - min considering two cows only. Answer will be lie between them
 - Find mid and if we can place all cows with that mid distance, that could be our potential answer.
 - then low = mid + 1 and high = mid - 1
