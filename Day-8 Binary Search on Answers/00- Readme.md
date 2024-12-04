@@ -63,3 +63,24 @@
 - Find mid and with help of mid, find missing number
 - If missing < k then low = mid + 1 else high = mid - 1
 - return arr[high] + more i.e. high + k + 1
+
+
+
+
+
+
+
+
+##
+## Min(max) or max(min) pattern
+
+
+
+
+
+
+##
+## 8. Aggressive Cows
+- Range would be 1 to max - min considering two cows only. Answer will be lie between them
+- Find mid and if we can place all cows with that mid distance, that could be our potential answer.
+- then low = mid + 1 and high = mid - 1
